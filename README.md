@@ -11,7 +11,7 @@ Change the directory to the project folder and run
 
 `cd src`
 
-Run the server and run
+Start server run
 
 `python manage.py runserver`
 
