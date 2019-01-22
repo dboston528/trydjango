@@ -13,7 +13,13 @@ def contact_view(request, *args, **kwargs):
     return render(request, "contact.html", {})
 
 def about_view(request, *args, **kwargs):
-    return render(request, "about.html", {})
+    # dictionary data set
+    my_context = {
+        "my_text": "This is about us",
+        "my_number": 123,
+        "my_list": [123,123,123,456]
+    }
+    return render(request, "about.html", my_context)
 
 def social_view(request, *args, **kwargs):
     return HttpResponse("<h1>This is a social view</h1>")
