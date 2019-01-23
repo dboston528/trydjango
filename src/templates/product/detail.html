@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+<!-- Use template tags to enherit objects from the base template -->
+{% block content %}
+<h1>{{ object.title }}</h1>
+
+<!-- This is a condition to show a statement if there is no
+content in the description field. -->
+<p>{% if oject.description != None and object.description != "" %}{{ object.description }}{% else %}Description Coming Soon{% endif %}
+</p>
+
+{{ object.price }}
+
+{% endblock %}
