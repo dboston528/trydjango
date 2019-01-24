@@ -18,4 +18,11 @@ Run the following code in the src directory:
 
 `python manage.py startapp [app name of your choice]`
 
+#Making chages to models:
+
+Everytime you make a change to a model run the following code:
+
+`python manage.py makemigrations`
+then
+`python manage.py migrate`
 
