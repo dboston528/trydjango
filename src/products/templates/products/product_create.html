@@ -3,7 +3,8 @@
 <!-- Use template tags to enherit objects from the base template -->
 {% block content %}
 <form method='POST'> {% csrf_token %}
-    <!-- 'form.as.p is a built in method that makes the input type a paragraph tags -->
+    <!-- 'form.as.p is a built in method that turns that form that we are passing as
+    context into an actual html form rendered with paragraph text -->
     {{ form.as_p }}
     <input type='submit' value='Save' />
 </form>
