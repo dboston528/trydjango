@@ -2,10 +2,12 @@
 
 <!-- Use template tags to enherit objects from the base template -->
 {% block content %}
-<form method='POST'> {% csrf_token %}
-    <!-- 'form.as.p is a built in method that turns that form that we are passing as
-    context into an actual html form rendered with paragraph text -->
-    {{ form.as_p }}
+<!-- 
+    • action will send a form to the url that you put ther
+    • leaving action blank or putting a period the form will 
+    just go to the current url  -->
+<form action='.' method='POST'> {% csrf_token %}
+    <input type='text' name='title' placeholder='Your Title' />
     <input type='submit' value='Save' />
 </form>
 {% endblock %}
