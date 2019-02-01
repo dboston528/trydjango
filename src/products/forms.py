@@ -11,3 +11,8 @@ class ProductForm(forms.ModelForm):
             'price'
         ]
         
+# different form fields here -> https://docs.djangoproject.com/en/2.1/ref/forms/fields/
+class RawProductForm(forms.Form):
+    title       = forms.CharField()
+    description = forms.CharField()
+    price       = forms.DecimalField()
