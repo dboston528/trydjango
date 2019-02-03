@@ -1,3 +1,7 @@
+# Installation
+
+`git clone https://github.com/dboston528/trydjango.git`
+
 # To start the application:
 
 Activate the virtual environment run
