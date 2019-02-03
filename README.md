@@ -1,5 +1,7 @@
 # Installation
 
+To install, use the following command to clone this reposititory to the directoiry of your choice:
+
 `git clone https://github.com/dboston528/trydjango.git`
 
 # To start the application:
