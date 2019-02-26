@@ -34,3 +34,7 @@ Everytime you make a change to a model run the following code:
 then
 `python manage.py migrate`
 
+# Creating a virtual envoironment
+
+`virtualenv -p python3 .`
+
